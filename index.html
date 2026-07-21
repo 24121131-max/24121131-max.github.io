@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Outfit &amp; Outing: トップページ</title>
+
+  <!-- 授業要素: meta description -->
+  <meta name="description" content="Outfit &amp; Outingは、日々の服装とその日の出来事・お出かけ記録をまとめて掲載する個人ログサイトです。">
+
   <link rel="stylesheet" href="css/mystyle.css">
 </head>
+
 <body>
   <header class="site-header">
     <div class="header-inner">
       <div class="header-logo">
-        <img src="image/logo.png" width="300" height="150" alt="Outfit &amp; Outing ロゴ画像" class="logo-img">
+        <!-- 授業要素: ロゴをクリックするとトップページへ飛ぶ -->
+        <a href="index.html">
+          <img src="image/logo.png" width="300" height="150" alt="Outfit &amp; Outing ロゴ画像" class="logo-img">
+        </a>
         <h1>Outfit &amp; Outing</h1>
       </div>
 
       <nav class="site-nav" aria-label="メインナビゲーション">
         <ul>
           <li><a href="index.html">トップ</a></li>
-          <li><a href="contents1.html">contents1</a></li>
-          <li><a href="contents2.html">contents2</a></li>
-          <li><a href="contents3.html">contents3</a></li>
+          <li><a href="contents1.html">Wear &amp; Log</a></li>
+          <li><a href="contents2.html">Monthly Goals</a></li>
+          <li><a href="contents3.html">Favorite &amp; Wish List</a></li>
         </ul>
       </nav>
       <div class="clear"></div>
@@ -31,20 +40,34 @@
       <img src="image/main.jpg" width="800" height="450" alt="本日の服装と景色のメインイメージ" class="main-img">
     </div>
 
-    <article>
-      <h2 id="intro">Outfit &amp; Outingへようこそ</h2>
-      <p>
-        日々の服装と、その日の出来事（外出先や活動内容）をまとめて掲載するサイトです。
-        <strong>自分が着た服と、それに関連する日常の出来事</strong>をセットにして、日付ごとに並べていきます。
-        いつ、どんな格好で、何をしていたかを後から自分で確認できるようなデータとして残しておくために制作します。
-      </p>
+    <!-- 授業要素: キャッチコピーブロック -->
+    <div class="catch">
+      <h2>Outfit &amp; Outingへようこそ</h2>
+      <p>このサイトは、日々の服装と外出先での出来事をまとめたログサイトです。</p>
+    </div>
 
+    <article>
       <nav class="breadcrumb" aria-label="パンくずリスト">
         <ul>
           <li><a href="index.html">トップ</a> &gt; </li>
           <li>トップページ</li>
         </ul>
       </nav>
+
+      <!-- お知らせ（News）セクション -->
+      <section id="news" class="page">
+        <h3>お知らせ</h3>
+        <ul class="news-list">
+          <li><time datetime="2026-07-21">07/21</time><a href="contents1.html">Wear &amp; Log</a>更新</li>
+          <li><time datetime="2026-07-14">07/14</time>Webサイト公開</li>
+        </ul>
+      </section>
+
+      <p>
+        日々の服装と、その日の出来事（外出先や活動内容）をまとめて掲載するサイトです。
+        <strong>自分が着た服と、それに関連する日常の出来事</strong>をセットにして、日付ごとに並べていきます。
+        いつ、どんな格好で、何をしていたかを後から自分で確認できるようなデータとして残しておくために制作します。
+      </p>
 
       <div class="navy">
         <section id="wear">
@@ -89,4 +112,5 @@
     </small>
   </footer>
 </body>
+
 </html>
