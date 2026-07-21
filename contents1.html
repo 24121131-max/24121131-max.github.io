@@ -3,23 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Outfit &amp; Outing: contents1</title>
+  <title>Outfit &amp; Outing: Wear &amp; Log</title>
+
+  <!-- 授業要素: サイトの概要を追加 -->
+  <meta name="description" content="Outfit &amp; OutingのWear &amp; Logページです。服の写真とお出かけの記録を掲載しています。">
+
   <link rel="stylesheet" href="css/mystyle.css">
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner">
       <div class="header-logo">
-        <img src="image/logo.png" width="300" height="150" alt="Outfit &amp; Outing ロゴ画像" class="logo-img">
+        <!-- 授業要素: ロゴをクリックでトップページに戻る -->
+        <a href="index.html">
+          <img src="image/logo.png" width="300" height="150" alt="Outfit &amp; Outing ロゴ画像" class="logo-img">
+        </a>
         <h1>Outfit &amp; Outing</h1>
       </div>
 
       <nav class="site-nav" aria-label="メインナビゲーション">
         <ul>
           <li><a href="index.html">トップ</a></li>
-          <li><a href="contents1.html">contents1</a></li>
-          <li><a href="contents2.html">contents2</a></li>
-          <li><a href="contents3.html">contents3</a></li>
+          <li><a href="contents1.html">Wear &amp; Log</a></li>
+          <li><a href="contents2.html">Monthly Goals</a></li>
+          <li><a href="contents3.html">Favorite &amp; Wish List</a></li>
         </ul>
       </nav>
       <div class="clear"></div>
@@ -28,15 +35,16 @@
 
   <main>
     <article class="content1">
-      <h2>contents1</h2>
+      <h2>Wear &amp; Log</h2>
 
       <nav class="breadcrumb" aria-label="パンくずリスト">
         <ul>
           <li><a href="index.html">トップ</a> &gt; </li>
-          <li>contents1</li>
+          <li>Wear &amp; Log</li>
         </ul>
       </nav>
 
+      <!-- 概要・案内セクション -->
       <section class="content1-box">
         <h3>Wear &amp; Log</h3>
         <p>服の写真と、外出先での出来事を掲載します。服の簡単な説明や、その日の内容を短く書きます。</p>
@@ -47,6 +55,29 @@
           <li>その日の感想</li>
         </ul>
       </section>
+
+      <!-- 7月18日 夏祭りのお出かけ記録 -->
+      <section class="log-entry">
+        <h3><time datetime="2026-07-18">2026年7月18日(土)</time> - 夏祭りでお出かけ</h3>
+        
+        <div class="log-content">
+          <!-- 写真2枚エリア -->
+          <div class="log-images">
+            <img src="image/yukata.jpg" width="300" alt="夏祭りの浴衣コーディネート" class="log-img">
+            <img src="image/potate.jpg" width="300" alt="屋台で食べたトルネードポテト" class="log-img">
+          </div>
+          
+          <!-- テキストエリア -->
+          <div class="log-text">
+            <ul>
+              <li><strong>服装のポイント：</strong> 紺地にカラフルな花柄の浴衣。キラキラしたピンクのグラデーション帯と、同系色のバッグを合わせてポップな雰囲気にしました。</li>
+              <li><strong>外出先：</strong> 夏祭り</li>
+              <li><strong>その日の感想：</strong> 久しぶりに浴衣を着てお祭りへ！屋台で買ったながーいトルネードポテトが美味しくて大満足でした。暑かったけれど光るハンディファンも大活躍！</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
     </article>
   </main>
 
